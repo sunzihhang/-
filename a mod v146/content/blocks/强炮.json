@@ -1,0 +1,37 @@
+{
+	"type":"ItemTurret",
+	"name":"强炮",
+   "description":"类似机枪（应该）",
+	"size":2,
+	"health":1000,
+	"ammoPerShot":0.1,
+	"range":800,
+	"reload":1,
+	"inaccuracy":0,
+  "ammoUseEffect": "casing2",
+	"rotatespeed":10,
+	"maxAmmo":100,
+	"targetAir":true,
+	"targetGround":true,
+	"coolantMultiplier":2,
+	"heatColor":"#FF01100",
+	"ammoTypes":{
+		"copper": {
+		                "pierceCap":2,
+		    "reloadMultiplier":1.1,
+			"speed": 100,
+			"damage": 1,
+			"knockback":10,
+			"lifetime":1000,
+			"width": 10,
+			"height": 5,
+			"ammoMultiplier":1.9,
+			"shootEffect": "shootBig" 	
+				}
+},
+	"requirements": 
+	 {"item":"物品名字","amount":200},
+     
+	"category": "turret",
+	"research":"duo"
+}

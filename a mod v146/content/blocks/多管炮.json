@@ -1,0 +1,88 @@
+{
+	"type": "ItemTurret",
+	"name": "大型炮",
+	"description": "双管他爹，可以在短时间内倾泻大量火力。",
+	"health": 500,
+	"size": 3,
+	"reload": 0,
+	"range": 9999,
+	"ammoPerShot": 99,
+	"consumes": {
+		"coolant": {
+			"amount": 0,
+			"optional": true
+		}
+	},
+	"shoot": {
+		"shots": 9,
+		"shotDelay": 9,
+		"type": "ShootAlternate",
+		"barrels": 9,
+		"spread": 9
+	},
+	"xRand": 1,
+	"ammoUseEffect": "casing2Double",
+	"inaccuracy": 1,
+	"rotateSpeed": 12,
+	"shake": 1,
+	"ammoTypes": {
+		"copper": {
+			"speed": 9,
+			"damage": 11,
+			"lifetime": 24,
+			"width": 7,
+			"height": 8,
+			"ammoMultiplier": 2,
+			"shootEffect": "shootSmall"
+		},
+		"graphite": {
+			"reloadMultiplier": 0.5,
+			"speed": 10,
+			"damage": 20,
+			"lifetime": 24,
+			"width": 7,
+			"height": 8,
+			"ammoMultiplier": 4,
+			"shootEffect": "shootSmall"
+		},
+		"pyratite": {
+			"speed": 10,
+			"damage": 13,
+			"lifetime": 24,
+			"width": 7,
+			"height": 8,
+			"makeFire": true,
+			"ammoMultiplier": 2,
+			"shootEffect": "shootSmall",
+			"status": "burning",
+			"statusDuration": 600,
+			"trailColor": "FF8C00",
+			"frontColor": "FFD700"
+		},
+		"silicon": {
+			"speed": 10,
+			"damage": 14,
+			"reloadMultiplier": 1.6,
+			"lifetime": 35,
+			"width": 7,
+			"height": 8,
+			"shootEffect": "shootSmall",
+			"homingRange": 40,
+			"homingPower": 0.06,
+			"ammoMultiplier": 5
+		}
+	},
+	"researchCostMultiplier": 0.5,
+	"requirements": [
+		{
+			"item": "copper",
+			"amount": 25
+		},
+		{
+			"item": "lead",
+			"amount": 15
+		}
+	],
+	"category": "turret",
+	"research": "da"
+}
